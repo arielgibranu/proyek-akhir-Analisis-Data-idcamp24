@@ -23,6 +23,7 @@ by_weathersit = create_sewa_sepeda_weathersit(all_df).reset_index(name='count')
 with st.sidebar:
     st.header("Selamat Datang")
     st.text("Penyewaan Sepeda")
+    st.image("dashboard/sepeda.jpg")
 
 
 
