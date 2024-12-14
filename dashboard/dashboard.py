@@ -13,7 +13,7 @@ def create_sewa_sepeda_weathersit(df):
     sewa_sepeda_weathersit = df.groupby(by="weathersit").size() 
     return sewa_sepeda_weathersit
 
-all_df = pd.read_csv("day.csv")
+all_df = pd.read_csv("dashboard/day.csv")
 
 by_workingday = create_sewa_sepeda_workingday(all_df).reset_index(name='count')
 by_weathersit = create_sewa_sepeda_weathersit(all_df).reset_index(name='count')
