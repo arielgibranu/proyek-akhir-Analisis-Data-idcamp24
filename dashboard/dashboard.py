@@ -65,7 +65,7 @@ colors = ["#90CAF9", "#D3D3D3", "#D3D3D3", "#D3D3D3"]
 
 plt.figure(figsize=(10, 6))
 ax = sns.barplot(x='weathersit', y='count', data=by_weathersit, order=[1, 2, 3, 4], palette=colors)
-plt.title('Jumlah Penyewaan Sepeda per Kondisi Cuaca')
+plt.title('Jumlah Penyewaan Sepeda Berdasarkan Kondisi Cuaca')
 plt.xlabel('Kondisi Cuaca')
 plt.ylabel('Jumlah Penyewaan')
 plt.xticks([0, 1, 2, 3], ['Cerah/Sedikit Berawan', 'Berawan/Berkabut', 'Hujan Ringan/Salju', 'Cuaca Ekstrim'])
