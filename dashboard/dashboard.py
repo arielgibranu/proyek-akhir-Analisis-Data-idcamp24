@@ -78,3 +78,5 @@ for p in ax.patches:
                 textcoords='offset points')
 
 st.pyplot(plt)
+
+st.caption('Ariel Gibranu 2024')
