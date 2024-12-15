@@ -15,7 +15,7 @@ def create_sewa_sepeda_workingday(df):
 def create_sewa_sepeda_weathersit(df):
     return df.groupby(by="weathersit")["cnt"].sum().reset_index()
 
-all_df = pd.read_csv("day.csv")
+all_df = pd.read_csv("dashboard/day.csv")
 
 # Ubah nilai numerik season dan weathersit ke string untuk memudahkan
 all_df['season'] = all_df['season'].map(season_mapping)
@@ -24,7 +24,7 @@ all_df['weathersit'] = all_df['weathersit'].map(weather_mapping)
 with st.sidebar:
     st.header("Selamat Datang")
     st.text("Penyewaan Sepeda Berkualitas by Ariel Gibranu")
-    st.image("sepeda.jpg")
+    st.image("dashboard/sepeda.jpg")
     st.caption('Ariel Gibranu (c) 2024')
 
 
