@@ -24,7 +24,7 @@ with st.sidebar:
     st.header("Selamat Datang")
     st.text("Penyewaan Sepeda")
     st.image("dashboard/sepeda.jpg")
-    st.caption('Ariel Gibranu 2024')
+    st.caption('Ariel Gibranu (c) 2024')
 
 
 
