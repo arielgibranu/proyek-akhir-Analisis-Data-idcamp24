@@ -24,6 +24,7 @@ with st.sidebar:
     st.header("Selamat Datang")
     st.text("Penyewaan Sepeda")
     st.image("dashboard/sepeda.jpg")
+    st.caption('Ariel Gibranu 2024')
 
 
 
@@ -78,5 +79,3 @@ for p in ax.patches:
                 textcoords='offset points')
 
 st.pyplot(plt)
-
-st.caption('Ariel Gibranu 2024')
